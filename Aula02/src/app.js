@@ -21,3 +21,4 @@ const MyNameApp ={
 }
 
 Vue.createApp(MyNameApp).mount("#app");
+//#app para referenciar o elemento app

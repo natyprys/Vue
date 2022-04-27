@@ -15,13 +15,26 @@
             <input type="submit" value="Enviar" v-on:click="submitForm">
 
             <!-- v-model- uma forma para comunicar ao Vue que quero salvar o dado -->
-            <!-- v-on:click- uma diretiva de click, ativar um evento -->    
+            <!-- v-on:click- uma diretiva de click, ativar um evento -->
         </form>
         <p>Qual é o seu nome? {{ name }}</p>
         <p>Data binding: {{ input_name }}</p>
         <!-- Para ir ao digitar, sem apertar o enviar -->
     </div>
 <body>
-    
+
 </body>
 </html>
+
+<!--  
+Outra opção seria criar uma instanciar o JS dentro do script
+new Vue({
+    el: '#app',
+    data(){
+        return {
+            name: "",
+            age: 25,
+            input_name: ""
+        }
+    }
+})  -->
