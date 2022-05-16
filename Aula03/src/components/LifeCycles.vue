@@ -6,13 +6,15 @@
 export default {
     name: 'LifeCycle',
  //nivel de hierarquia    
- // created sobreescreve data e mouted sobreescreve created
+ // created sobreescreve data e mounted sobreescreve created
+
 data(){
     return{
         nome: 'Ainda não sei'
     }
 },
 
+//depois da criação do componente oq eu vou fazer passo no created
 created(){
     //Mudar o nome depois de 1s
     setTimeout(() =>{
@@ -20,10 +22,11 @@ created(){
     }, 1000);    
 },
 
-mouted(){
-    setTimeout(() => {
+mounted(){
+    setTimeout(() =>{
         this.nome = 'Lins'   
-    }, 3000);          
+    }, 2000);          
 }  
+
 }
 </script>
