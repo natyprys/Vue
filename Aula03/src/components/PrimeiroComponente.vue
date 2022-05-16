@@ -2,6 +2,8 @@
     <div>
        <h1>Olá Vue!</h1>
         <p> Meu nome é {{nome}} e trabalho como {{profissao}}</p>  
+        <!-- Os componentes do Vue só podem ter um elemento router -->
+        <!-- Por isso colocamos em uma div -->
     </div>  
 </template>
 
