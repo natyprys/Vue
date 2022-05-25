@@ -1,7 +1,7 @@
 <template>
     <div>
         <PrimeiroComponente /> 
-        <LifeCycles />
+        <LifeCycle />
         <Pessoa />
     </div>  
 </template>
@@ -9,7 +9,7 @@
 <script>
 //import das componentes
 import PrimeiroComponente from "./components/form/PrimeiroComponente.vue"
-import LifeCycles from "./components/form/LifeCycles.vue"
+import LifeCycle from "./components/form/LifeCycle.vue"
 import Pessoa from "./components/form/Pessoa.vue"
 
     export default {
@@ -17,7 +17,7 @@ import Pessoa from "./components/form/Pessoa.vue"
     //chamamos as componentes que serão usados no app e passamos no template
     components: {
         PrimeiroComponente,
-        LifeCycles,
+        LifeCycle,
         Pessoa
     },
 
@@ -29,3 +29,17 @@ import Pessoa from "./components/form/Pessoa.vue"
     }
 }
 </script>
+
+<style>
+body{
+    background-color: plum;
+    color: black;
+}
+
+/* para mudar a cor do link de acesso aos sites */
+a{
+    color: darkmagenta;
+}
+
+
+</style>
