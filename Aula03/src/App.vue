@@ -1,7 +1,6 @@
 <template>
     <div>
         <PrimeiroComponente /> 
-        <p>O dado de app é: {{ testando }}</p>
         <LifeCycle />
         <Pessoa />
     </div>
@@ -10,9 +9,9 @@
 
 <script>
 //import das componentes
-import PrimeiroComponente from "./components/PrimeiroComponente.vue"
-import LifeCycle from "./components/LifeCycles.vue"
-import Pessoa from "./components/Pessoa.vue"
+import PrimeiroComponente from "./components/form/PrimeiroComponente.vue"
+import LifeCycle from "./components/form/LifeCycles.vue"
+import Pessoa from "./components/form/Pessoa.vue"
 
     export default {
     name: 'App',
@@ -31,3 +30,8 @@ import Pessoa from "./components/Pessoa.vue"
     }
 }
 </script>
+
+<style>
+/* css global */
+
+</style>

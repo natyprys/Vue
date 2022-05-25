@@ -1,7 +1,6 @@
-
 <template>
     <div>
-        <h2>Esta é a descrição da pessoa: {{nome}}  </h2>
+        <p>Mas pode me chamar de: {{nome}}.</p>
         <Info />
         <Form />
     </div>

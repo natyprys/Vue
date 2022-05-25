@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import InputText from "./form/InputText.vue"
-import Submit from "./form/Submit.vue"
+import InputText from "./InputText.vue"
+import Submit from "./Submit.vue"
 
 export default {
     name: 'Form',

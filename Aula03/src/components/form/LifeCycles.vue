@@ -1,5 +1,5 @@
 <template>
-    <h1>Meu nome é: {{ nome }} </h1>
+    <h2>Meu nome completo é: {{ nome }} </h2>
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
 
 data(){
     return{
-        nome: 'Ainda não sei'
+        nome: 'Nathália Priscila'
     }
 },
 
@@ -18,14 +18,20 @@ data(){
 created(){
     //Mudar o nome depois de 1s
     setTimeout(() =>{
-        this.nome = 'Assunção' 
+        this.nome = 'Lins' 
     }, 1000);    
+    this.lifeCycle()
 },
 
 mounted(){
     setTimeout(() =>{
-        this.nome = 'Lins'   
+        this.nome = 'Nathalia Priscila Lins de Assunção'   
     }, 2000);          
+},
+methods:{
+    lifeCycle(){
+        console,log("executando")
+    }
 }  
 
 }
