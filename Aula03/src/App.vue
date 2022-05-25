@@ -1,16 +1,15 @@
 <template>
     <div>
         <PrimeiroComponente /> 
-        <LifeCycle />
+        <LifeCycles />
         <Pessoa />
-    </div>
- 
+    </div>  
 </template>
 
 <script>
 //import das componentes
 import PrimeiroComponente from "./components/form/PrimeiroComponente.vue"
-import LifeCycle from "./components/form/LifeCycles.vue"
+import LifeCycles from "./components/form/LifeCycles.vue"
 import Pessoa from "./components/form/Pessoa.vue"
 
     export default {
@@ -18,7 +17,7 @@ import Pessoa from "./components/form/Pessoa.vue"
     //chamamos as componentes que serão usados no app e passamos no template
     components: {
         PrimeiroComponente,
-        LifeCycle,
+        LifeCycles,
         Pessoa
     },
 
@@ -30,8 +29,3 @@ import Pessoa from "./components/form/Pessoa.vue"
     }
 }
 </script>
-
-<style>
-/* css global */
-
-</style>
