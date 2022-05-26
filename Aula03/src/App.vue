@@ -40,6 +40,4 @@ body{
 a{
     color: darkmagenta;
 }
-
-
 </style>
