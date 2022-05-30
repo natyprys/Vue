@@ -4,11 +4,14 @@
         <p v-if="esta_trabalhando" >Estou trabalhando no momento.</p>
         <!-- o if e o else devem estar juntos -->
         <p v-else> Estou em busca de novas oportunidades!</p>
-        <p>Utilizo as seguintes tecnologias:</p>
+        <p>Utilizo as seguintes tecnologias para back-end:</p>
         <ul>
-            <li>Java</li>
-            <li>Angular</li>
-            <li>Python</li>   
+            <!-- O for deve ser colocado no elemento que se repetirá -->
+            <li v-bind:key="index" v-for="(technology, index) in backend_tecnologies">{{technology}}</li>
+        </ul>
+        <p>Utilizo as seguintes tecnologias para front-end:</p>
+        <ul>
+            <li v-for="technology in frontend_technologies" :key="technology.id">{{technology.language}}</li>
         </ul>
         <div> 
             <button @click="showEmail">{{textoBotao}}</button>
@@ -37,7 +40,15 @@ export default{
             mostrar_email: false,
             email: 'nathalia.p.lins@gmail.com',
             meu_link: 'https://github.com/natyprys',
-            textoBotao: 'Mostrar e-mail'
+            textoBotao: 'Mostrar e-mail',
+            //notação de arrey []
+            backend_tecnologies: ['Java', 'Python' , 'JavaScript'],
+            //notação para objeto {}
+            frontend_technologies: [
+                {id:1, language: 'HTML'}, 
+                {id:2, language: 'CSS'},
+                {id:3, language: 'Vue'}, 
+                {id:4, language: 'Angular'}]
         }
     },
     methods:{
