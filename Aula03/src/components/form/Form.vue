@@ -1,12 +1,13 @@
 <template>
     <div>
        <h2>Meu Formulário</h2>
-    <form action="" @submit="enviarFormulario">
+    <form action="" @submit="enviarFormulario($event)">
         <div>
-            <InputText /> 
+            <input type="test" v-model="name">
+            <!-- v-model = dados q serão refletidos no formulario -->
        </div>
        <div>
-            <InputText /> 
+           <input type="test" v-model="email">
        </div>
        <div>
             <Submit />  
@@ -25,9 +26,25 @@ export default {
         InputText,
         Submit
     },
+    data(){
+        return{
+        name: "",
+        email: ""
+        }
+    },
     methods:{
-        enviarFormulario(){
-             console.log("Formulário Enviado!");
+        //para previnir que o formulário seja enviado
+        enviarFormulario(e){
+            e.preventDefault();
+
+            const name = this.name;
+            const email = this.email;
+
+            console.log("Formulário Enviado!");
+            console.log("O nome é: " + name);
+            console.log("O email é: " + email);
+
+            //inserir banco de dado
         }
     }
 }

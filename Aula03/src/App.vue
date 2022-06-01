@@ -37,12 +37,12 @@ import Pessoa from "./components/form/Pessoa.vue"
 <style>
 /* estilo de uso global - pode ser chamado em qualquer parte do codigo */
 body{
-    background-color: plum;
+    background-color: rgb(179, 160, 221);
     color: black;
 }
 
 /* para mudar a cor do link de acesso aos sites */
 a{
-    color: darkmagenta;
+    color: rgb(21, 0, 139);
 }
 </style>
