@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p> {{compEmail}} - {{email}}</p>
         <!-- para diretivas if e else a condição deve ser colocar no data -->
         <p v-if="esta_trabalhando" >Estou trabalhando no momento.</p>
         <!-- o if e o else devem estar juntos -->
@@ -33,6 +34,10 @@ export default{
     name:'Info',
     components:{
         Picture
+    },
+    props:{
+        //receve de Pessoa
+        compEmail: String
     },
     data(){
         return{

@@ -1,7 +1,8 @@
 <template>
     <div>
         <p>Mas pode me chamar de: {{nome}}.</p>
-        <Info />
+        <Info  compEmail= "jeff.alves@gmail.com"/>
+        <!-- <Info :hotmail="hotmail"/>    para chamar a props de forma dinamica-->
         <Form />
     </div>
 </template>
@@ -19,7 +20,9 @@ export default {
 
     data(){
        return{
-           nome: 'Naty'
+           nome: 'Naty',
+           hotmail: "natyzinha.priscila@hotmail.com"
+           //para passar de forma dinamica posso só substituir os gmails em info por hotmail
        } 
     }    
 }
